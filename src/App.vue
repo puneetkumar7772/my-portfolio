@@ -3,6 +3,8 @@ import NavBar from "./components/NavBar.vue";
 // import SideBar from "./components/SideBar.vue";
 import HomePage from "./components/HomePage.vue";
 import ProfileSummary from "./components/ProfileSummary.vue";
+import TechnologiesSection from "./components/TechnologiesSection.vue";
+import ContactForm from "./components/ContactForm.vue";
 </script>
 
 <template>
@@ -17,6 +19,13 @@ import ProfileSummary from "./components/ProfileSummary.vue";
   <ScrollReveal>
     <ProfileSummary />
   </ScrollReveal>
+    <ScrollReveal>
+    <TechnologiesSection />
+  </ScrollReveal>
+  <ScrollReveal>
+    <ContactForm />
+  </ScrollReveal>
+  
     </div>
   </div>
 </template>
