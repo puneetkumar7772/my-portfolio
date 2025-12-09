@@ -1,32 +1,22 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import NavBar from './components/NavBar.vue';
+import NavBar from "./components/NavBar.vue";
+// import SideBar from "./components/SideBar.vue";
+import HomePage from "./components/HomePage.vue";
+import ProfileSummary from "./components/ProfileSummary.vue";
 </script>
 
 <template>
-  <!-- <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" /> -->
-  <NavBar/>
-</template>
+  <div class="flex flex-col h-screen bg-[#0d0d0d] text-white">
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+    <NavBar />
+    <div class=" bg-gradient-to-b from-[#0e0e0e] to-[#1a1a1a]">
+      <ScrollReveal>
+    <HomePage />
+  </ScrollReveal>
+
+  <ScrollReveal>
+    <ProfileSummary />
+  </ScrollReveal>
+    </div>
+  </div>
+</template>
